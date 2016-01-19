@@ -756,8 +756,30 @@ hr{
     max-height: 300px !important;
 }
 .col-md-7{
-    width: 700px;
-    height: 300px;
-    background-color: white;
-    box-shadow: 0px 1px 2px #9f9f9f !important;
+
+}
+.img-container{
+	width: 400px;
+	height: 300px;
+	background-color: white;
+	box-shadow: 0px 1px 2px #9f9f9f !important;
+}
+
+.navbar.navbar-fixed-bottom{
+	height: 120px;
+}
+.logo-mts{
+	padding: 15px;
+}
+.tool .technical{
+	font-size: 18px;
+}
+.content{
+	padding-bottom: 120px;
+}
+.padding-bottom{
+	padding-bottom: 220px;
+}
+.tool{
+	padding-bottom: 220px;
 }

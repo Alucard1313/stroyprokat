@@ -11,10 +11,10 @@
         <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <div id="logo"><a href="index.html"><img src="style/images/logo.png" alt="" /></a></div>
+                    <div id="logo"><a href="index.php"><img src="style/images/logo.png" alt="" /></a></div>
                 </div>
                 <ul class="nav nav-pills navbar-nav navbar-right">
-                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.php">Главная</a></li>
                     <li class="active"><a href="portfolio.php">Каталог</a></li>
                     <li><a href="contact.html">Контакты</a></li>
                 </ul>
@@ -27,12 +27,12 @@
             <?php foreach ($params as $key => $value): ?>
 
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-5 img-container">
                         <a  href="#">
                             <img class="img-responsive" src="style/images/catalog/<?php echo $value['image']; ?>" alt="">
                         </a>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 col-md-offset-1">
                         <h3><?php echo $value['name']; ?></h3>
                         <!--<h4>Subheading</h4>-->
                         <p><?php echo substr($value['description'], '0', '800').'...' ; ?></p>
@@ -48,7 +48,9 @@
 
             <nav class="navbar navbar-fixed-bottom">
                 <div class="container">
-                    <div class="navbar-header">
+                    <div class="navbar-header logo-mts">
+                        <img src="style/images/logo_mts.png" alt=""/>
+                        <small>+375 29 515 18 23</small>
                     </div>
                     <ul class="nav nav-pills navbar-nav navbar-right">
                         <li><a href="#"><img src="style/images/icon-rss.png" alt="" /></a></li>
